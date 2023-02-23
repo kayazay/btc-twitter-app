@@ -1,41 +1,37 @@
-# BTC CRAWLER
+# BTC-Twitter-App
 
-## This is a simple, dockerized web crawler application made with Python.
+This is a Python script that tweets the current price of Bitcoin (BTC) along with an image.
 
-<img src = "https://user-images.githubusercontent.com/60517587/204914487-9482816c-c497-48c9-8509-5f1822a7ebf3.gif" width=60% height=20% />
+## External Libraries
 
-And yes, this is infact my first time containerizing with Docker 😃 
+The following external libraries are required:
 
-+ This app makes a request to **`CoinMarketCap`**- a reliable source of information for Crypto-currency prices.
+- tweepy
+- Pillow (PIL)
 
-+ Extracts relevant data from API endpoints and processes this into a tweet.
+## Usage
 
-+ Downloads image from url to be used along with tweet.
+To use this script, you need to have API keys from Twitter and CoinMarketCap. Once you have these, follow these steps:
 
-+ Esablishes connection with Twitter API and makes the tweet.
+1. Clone this repository.
+2. Create a new file named `auth_file.py` in the same directory as `btc-twitter-app.py`.
+3. In `auth_file.py`, add your API keys like this:
 
-**NOTE:** API keys and link to image were saved into variables in a different Python script- **auth_file** and then called in main script.
+  > `consumer_key` = 'YOUR_CONSUMER_KEY'
+  >
+  >  `consumer_secret` = 'YOUR_CONSUMER_SECRET'
+  > 
+  > `access_token` = 'YOUR_ACCESS_TOKEN'
+  > 
+  > `access_secret` = 'YOUR_ACCESS_SECRET'
+  > 
+  > `pro_api_key` = 'YOUR_COINMARKETCAP_API_KEY'
 
-## External Python Libraries used:
+</details>
 
-+ **PIL**- to work with images easily;
+4. Install the required external libraries (tweepy and Pillow) using `pip`.
+5. Run the script using the command `python btc-twitter-app.py`.
 
-+ **Tweepy**- to access Twitter API.
+## License
 
-## How to Run This App Locally
-
-+ Spin up your terminal and run a `git clone` to clone this repo
-
-+ `cd` to the **btc-twitter-app** directory
-
-+ Create a python script- **auth_file.py** to hold API keys.
-
-+ Run a `docker build -t preferred-name-of-image` to build the Dockerfile into an image.
-
-+ `docker run preferred-name-of-image` to start up the container
-
-+ Logging messsages would be printed and tweet made successfully.
-
----
-
-<p>&copy; 2022 Kingsley Izima</p>
+This project is licensed under the MIT License. See the `LICENSE` file for details.
