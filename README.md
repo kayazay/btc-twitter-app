@@ -31,7 +31,3 @@ To use this script, you need to have API keys from Twitter and CoinMarketCap. On
 
 4. Install the required external libraries (tweepy and Pillow) using `pip`.
 5. Run the script using the command `python btc-twitter-app.py`.
-
-## License
-
-This project is licensed under the MIT License. See the `LICENSE` file for details.
