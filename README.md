@@ -1,4 +1,4 @@
-# BTC-Twitter-App
+# BTC Twitter App
 
 This is a Python script that tweets the current price of Bitcoin (BTC) along with an image.
 
